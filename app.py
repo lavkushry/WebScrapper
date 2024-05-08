@@ -2,7 +2,7 @@ from flask import Flask, render_template, request,jsonify
 from flask_cors import CORS,cross_origin
 import requests
 from bs4 import BeautifulSoup as bs
-from urllib.request import urlopen as uReq
+from urllib.request import urlopen
 import logging
 logging.basicConfig(filename='scrapper.log',level=logging.INFO)
 
@@ -12,15 +12,16 @@ app=Flask(__name__)
 def homepage():
     return render_template("index.html")
 
-@app.route("/review",methods=['POST','GET'])
+@app.route("/review" , methods = ['POST' , 'GET'])
 def index():
     if request.method=='POST':
         try:
             searchString=request.form['content'].replace(" ","")
             flipcart_url="https://www.flipkart.com/search?q="+searchString
-            uClient=uReq(flipcart_url)
-            flipcart_page=uClient.read()
-            uClient.close()
+            urlclient = urlopen(flipcart_url)
+            print(urlclient)       
+            flipkart_page=urlclient.read()
+            print(flipcart_page)
             flipcart_html=bs(flipcart_page,"html.parser")
             bigBoxes=flipcart_html.findAll('div',{"class":'cPHDOP col-12-12'})
             del bigBoxes[0:3]
@@ -89,8 +90,5 @@ def index():
         return render_template('index.html')
 
 
-
-
-
 if __name__=="__main__":
-    app.run(host="0.0.0.0",port=8081)
+    app.run(host="0.0.0.0",port=5000)

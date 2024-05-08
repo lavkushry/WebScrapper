@@ -3,62 +3,26 @@ INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a
  * Running on http://127.0.0.1:8081
  * Running on http://172.18.0.16:8081
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:38:26] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:38:26] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:38:27] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [08/May/2024 23:04:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [08/May/2024 23:04:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.2 - - [08/May/2024 23:04:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 INFO:root:HTTP Error 500: Internal Server Error
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:38:44] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [08/May/2024 23:04:57] "POST /review HTTP/1.1" 200 -
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:8081
  * Running on http://172.18.0.16:8081
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:39:52] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:39:52] "GET /static/css/main.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:39:52] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [08/May/2024 23:05:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [08/May/2024 23:05:11] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.2 - - [08/May/2024 23:05:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 INFO:root:HTTP Error 500: Internal Server Error
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:40:12] "POST /review HTTP/1.1" 200 -
-INFO:root:HTTP Error 500: Internal Server Error
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:40:13] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [08/May/2024 23:05:29] "POST /review HTTP/1.1" 200 -
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:8081
  * Running on http://172.18.0.16:8081
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:root:HTTP Error 500: Internal Server Error
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:43:24] "POST /review HTTP/1.1" 200 -
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:8081
- * Running on http://172.18.0.16:8081
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:45:23] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:45:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:45:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:root:HTTP Error 500: Internal Server Error
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:45:41] "POST /review HTTP/1.1" 200 -
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:8081
- * Running on http://172.18.0.16:8081
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:51:37] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:51:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:51:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:root:HTTP Error 500: Internal Server Error
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:51:56] "POST /review HTTP/1.1" 200 -
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:8081
- * Running on http://172.18.0.16:8081
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:8081
- * Running on http://172.18.0.16:8081
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:53:07] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:53:07] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:53:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:root:HTTP Error 500: Internal Server Error
-INFO:werkzeug:172.18.0.2 - - [08/May/2024 22:53:25] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [08/May/2024 23:06:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [08/May/2024 23:06:16] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.2 - - [08/May/2024 23:06:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
