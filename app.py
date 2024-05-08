@@ -8,13 +8,13 @@ logging.basicConfig(filename='scrapper.log',level=logging.INFO)
 
 app=Flask(__name__)
 
-@app.route("/",methods=['GET'])
-def home_page():
-    return render_template('index.html')
+@app.route("/", methods = ['GET'])
+def homepage():
+    return render_template("index.html")
 
-@app.route('/review',methods=['POST','GET'])
+@app.route("/review",methods=['POST','GET'])
 def index():
-    if methods.request=="POST":
+    if request.method=='POST':
         try:
             searchString=request.form['content'].replace(" ","")
             flipcart_url="https://www.flipkart.com/search?q="+searchString
@@ -22,15 +22,17 @@ def index():
             flipcart_page=uClient.read()
             uClient.close()
             flipcart_html=bs(flipcart_page,"html.parser")
-            bigBoxes=flipcart_html.find_all('div',{"class":'cPHDOP col-12-12'})
+            bigBoxes=flipcart_html.findAll('div',{"class":'cPHDOP col-12-12'})
             del bigBoxes[0:3]
             box=bigBoxes[0]
             product_link="https://www.flipkart.com" + box.div.div.div.a['href']
+            print(product_link)
+
             product_req = urlopen(product_link)
             product_page=product_req.read()
+            product_page.encoding='utf-8'
             product_html=bs(product_page,'html.parser')
             commentboxes=product_html.find_all("div",{"class":"RcXBOT"})
-
             filename = searchString + ".csv"
             fw = open(filename, "w")
             headers = "Product, Customer Name, Rating, Heading, Comment \n"
